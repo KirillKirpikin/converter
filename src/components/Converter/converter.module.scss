@@ -1,0 +1,18 @@
+.title {
+    @apply font-[700] text-[30px] mb-[10px] text-center;
+}
+.converter {
+    @apply relative;
+    .refresh {
+        @apply flex absolute top-[43%] left-[20px];
+        button {
+            @apply rotate-0 transition-all duration-300;
+            &:hover {
+                @apply rotate-90;
+            }
+            &:active {
+                @apply rotate-180;
+            }
+        }
+    }
+}

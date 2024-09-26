@@ -1,0 +1,16 @@
+.items {
+    @apply flex items-center;
+}
+.select {
+    @apply w-1/4;
+}
+
+.input {
+    @apply flex flex-col items-center relative mx-[10px];
+    input {
+        @apply w-full text-[23px] text-right rounded-[10px] font-[600] text-[#404040] outline-none;
+        &::placeholder {
+            @apply font-normal text-[#cecbcbb7] text-[20px] md:text-[23px];
+        }
+    }
+}

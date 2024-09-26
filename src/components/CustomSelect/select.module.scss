@@ -1,0 +1,24 @@
+.select {
+    @apply relative w-full;
+
+    .main {
+        @apply flex items-center justify-between   overflow-hidden cursor-pointer;
+        span {
+            @apply text-[23px] text-white pl-[20px]  font-normal;
+        }
+
+        .img {
+            @apply px-[20px] transition-all duration-200;
+        }
+        .img_active {
+            @apply rotate-180;
+        }
+    }
+
+    .options {
+        @apply absolute top-[100%] left-0 w-full z-[1000]  bg-[#222222]/[0.9]  overflow-y-auto max-h-[200px];
+        div {
+            @apply py-2 pr-[20px] cursor-pointer text-[20px] md:text-[23px] text-white font-normal transition-all duration-200 hover:underline;
+        }
+    }
+}
